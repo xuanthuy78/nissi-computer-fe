@@ -2,7 +2,7 @@
   "name": "nissi-computer-fe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://xuanthuy78.github.io/deploy-github/",
+  "homepage": "https://xuanthuy78.github.io/nissi-computer-fe/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
