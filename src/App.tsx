@@ -1,27 +1,39 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.scss";
+import { SearchSection } from "./components/common";
+import SubjectSection from "./components/common/SubjectSection";
 
-function App() {
+const App = () => {
+  // const product: any = {
+  //   productName:
+  //     "Máy tính xách tay Dell Latitude 5520 (Intel Core i5.1145G7,15.6inchFHD)Máy tính xách tay Dell Latitude 5520 (Intel Core i5.1145G7,15.6inchFHD)",
+  //   productImage:
+  //     "http://localhost:4000/public/uploads/Happy Birthday-1694682478354.png",
+  //   imageCollection: [
+  //     "http://localhost:4000/public/uploads/1-1694682478424.png",
+  //     "http://localhost:4000/public/uploads/HopeChris-1694682478442.png",
+  //   ],
+  //   price: 8890000,
+  //   marketPrice: 15000000,
+  //   slug: "man-hinh-10inch-1",
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <React.Fragment>
+      <SearchSection
+        onFinish={(e) => {
+          console.log(e);
+        }}
+      />
+      <SubjectSection />
+
+      {/* <Row gutter={[12, 12]}>
+        <Col>
+          <CardSection product={product} />
+        </Col>
+      </Row> */}
+    </React.Fragment>
   );
-}
+};
 
 export default App;

@@ -3,11 +3,11 @@ import { themeColor } from "../../common";
 
 export const configTheme: ThemeConfig = {
   token: {
-    colorPrimary: themeColor.utOrange,
+    colorPrimary: themeColor.primary,
   },
   components: {
     Layout: {
-      colorBgHeader: themeColor.prussianBlue,
+      colorBgHeader: themeColor.secondary,
     },
   },
 };
