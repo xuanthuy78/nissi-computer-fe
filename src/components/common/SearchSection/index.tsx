@@ -16,21 +16,21 @@ const SearchSection: React.FC<PropsType> = ({ onFinish }) => {
     <React.Fragment>
       <Form size="large" onFinish={onFinish} autoComplete="off">
         <Space.Compact block>
-          <Form.Item name="categories" className="w-1/3 md:w-2/5 lg:w-1/4">
+          <Form.Item name="categories" className="w-1/3 md:w-2/5 lg:w-1/4 mb-0">
             <Select placeholder="Please select a country">
               <Select.Option value="all">Tất cả</Select.Option>
               <Select.Option value="laptop">Laptop</Select.Option>
             </Select>
           </Form.Item>
-          <Form.Item name="search" className="w-2/3 md:w-3/5 lg:w-3/4">
+          <Form.Item name="search" className="w-2/3 md:w-3/5 lg:w-3/4 mb-0">
             <AutoComplete />
           </Form.Item>
-          <Form.Item>
+          <Form.Item className="mb-0">
             <Button htmlType="submit" type="primary" className="btn-primary">
-              <Typography.Text className="!hidden sm:!block font-bold">
+              <Typography.Text className="!hidden md:!block font-bold">
                 Tìm kiếm
               </Typography.Text>
-              <Typography.Text className="!block sm:!hidden">
+              <Typography.Text className="!block md:!hidden">
                 <SearchOutlined />
               </Typography.Text>
             </Button>

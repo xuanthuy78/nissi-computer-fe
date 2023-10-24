@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import { SearchSection } from "./components/common";
 import SubjectSection from "./components/common/SubjectSection";
+import HeaderSection from "./components/nissi/HeaderSection";
 
 const App = () => {
   // const product: any = {
@@ -32,6 +33,8 @@ const App = () => {
           <CardSection product={product} />
         </Col>
       </Row> */}
+      <HeaderSection />
+      {/* <Menu mode="horizontal" items={menus} /> */}
     </React.Fragment>
   );
 };

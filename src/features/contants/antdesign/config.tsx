@@ -9,5 +9,13 @@ export const configTheme: ThemeConfig = {
     Layout: {
       colorBgHeader: themeColor.secondary,
     },
+    Typography: {
+      colorText: themeColor.white,
+    },
+    Menu: {
+      darkItemBg: themeColor.secondary,
+      darkItemColor: themeColor.white,
+      darkItemHoverColor: themeColor.primary,
+    },
   },
 };
