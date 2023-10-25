@@ -69,7 +69,7 @@ const HeaderSection = () => {
                 items: products,
               }}
             >
-              <Space className="cursor-pointer text-white font-bold">
+              <Space className="cursor-pointer font-bold">
                 <MenuOutlined />
                 Danh mục sản phẩm
               </Space>
@@ -86,10 +86,9 @@ const HeaderSection = () => {
         <Row align="middle" justify="space-between" className="pb-4">
           <Col span={3}>
             <MenuOutlined
-              className="cursor-pointer text-white text-2xl"
+              className="cursor-pointer text-2xl"
               onClick={() => setOpen(true)}
             />
-
             <Drawer
               title={
                 <Typography.Title level={3} className="!m-0">

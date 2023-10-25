@@ -16,3 +16,10 @@ export type ProductTypes = {
   productType: { isNew: number; isHot: number; isSaleOff: number };
   brand?: { image: string };
 };
+
+export type CareTypes = {
+  id: number;
+  title: string;
+  describe: string;
+  icon: any;
+};

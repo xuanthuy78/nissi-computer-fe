@@ -3,6 +3,7 @@ import "./App.scss";
 import { SearchSection } from "./components/common";
 import SubjectSection from "./components/common/SubjectSection";
 import HeaderSection from "./components/nissi/HeaderSection";
+import { FooterSection } from "./components/nissi";
 
 const App = () => {
   // const product: any = {
@@ -21,19 +22,14 @@ const App = () => {
 
   return (
     <React.Fragment>
-      <SearchSection
-        onFinish={(e) => {
-          console.log(e);
-        }}
-      />
-      <SubjectSection />
-
       {/* <Row gutter={[12, 12]}>
         <Col>
           <CardSection product={product} />
         </Col>
       </Row> */}
       <HeaderSection />
+      Hello
+      <FooterSection />
       {/* <Menu mode="horizontal" items={menus} /> */}
     </React.Fragment>
   );

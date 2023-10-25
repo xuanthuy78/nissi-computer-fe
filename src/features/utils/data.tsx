@@ -9,6 +9,9 @@ import {
   LaptopOutlined,
   FileProtectOutlined,
   InsertRowBelowOutlined,
+  RocketOutlined,
+  SyncOutlined,
+  WechatOutlined,
 } from "@ant-design/icons";
 import { createFromIconfontCN } from "@ant-design/icons";
 
@@ -154,6 +157,26 @@ export const products = [
   },
 ];
 
+export const cares = [
+  {
+    id: 1,
+    title: "Giao Hàng Toàn Quốc",
+    describe: "Nhận hàng và thanh toán tại nhà",
+    icon: <RocketOutlined />,
+  },
+  {
+    id: 2,
+    title: "Đổi trả dễ dàng",
+    describe: "Đổi mới trong 7 ngày đầu",
+    icon: <SyncOutlined />,
+  },
+  {
+    id: 3,
+    title: "Hỗ trợ tận tình",
+    describe: "Tư vấn tổng đài miễn phí 24/7",
+    icon: <WechatOutlined />,
+  },
+];
 export const IconFont = createFromIconfontCN({
   scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
 });

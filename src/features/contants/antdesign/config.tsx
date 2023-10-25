@@ -8,6 +8,8 @@ export const configTheme: ThemeConfig = {
   components: {
     Layout: {
       colorBgHeader: themeColor.secondary,
+      headerColor: themeColor.white,
+      footerBg: themeColor.secondary,
     },
     Typography: {
       colorText: themeColor.white,
@@ -16,6 +18,9 @@ export const configTheme: ThemeConfig = {
       darkItemBg: themeColor.secondary,
       darkItemColor: themeColor.white,
       darkItemHoverColor: themeColor.primary,
+    },
+    Dropdown: {
+      controlHeight: 40,
     },
   },
 };
