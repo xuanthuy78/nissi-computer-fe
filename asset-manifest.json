@@ -1,16 +1,20 @@
 {
   "files": {
-    "main.css": "/nissi-computer-fe/static/css/main.0f01db1b.css",
-    "main.js": "/nissi-computer-fe/static/js/main.80df231b.js",
+    "main.css": "/nissi-computer-fe/static/css/main.df498379.css",
+    "main.js": "/nissi-computer-fe/static/js/main.d2a3d82d.js",
     "static/js/787.efbf917a.chunk.js": "/nissi-computer-fe/static/js/787.efbf917a.chunk.js",
-    "static/media/logo.svg": "/nissi-computer-fe/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/banner1.jpeg": "/nissi-computer-fe/static/media/banner1.f7ceab1943aadeb5a8e4.jpeg",
+    "static/media/banner2.jpeg": "/nissi-computer-fe/static/media/banner2.ceab336f5236c5ebf376.jpeg",
+    "static/media/banner.jpeg": "/nissi-computer-fe/static/media/banner.66ce4b067f55ce0c703a.jpeg",
+    "static/media/laptop.png": "/nissi-computer-fe/static/media/laptop.705f255dd2f64651d09d.png",
+    "static/media/logo.png": "/nissi-computer-fe/static/media/logo.91192916c22f9e48d4e4.png",
     "index.html": "/nissi-computer-fe/index.html",
-    "main.0f01db1b.css.map": "/nissi-computer-fe/static/css/main.0f01db1b.css.map",
-    "main.80df231b.js.map": "/nissi-computer-fe/static/js/main.80df231b.js.map",
+    "main.df498379.css.map": "/nissi-computer-fe/static/css/main.df498379.css.map",
+    "main.d2a3d82d.js.map": "/nissi-computer-fe/static/js/main.d2a3d82d.js.map",
     "787.efbf917a.chunk.js.map": "/nissi-computer-fe/static/js/787.efbf917a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f01db1b.css",
-    "static/js/main.80df231b.js"
+    "static/css/main.df498379.css",
+    "static/js/main.d2a3d82d.js"
   ]
 }
