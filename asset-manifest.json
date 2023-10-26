@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/nissi-computer-fe/static/css/main.df498379.css",
-    "main.js": "/nissi-computer-fe/static/js/main.801d7e62.js",
+    "main.js": "/nissi-computer-fe/static/js/main.67a15855.js",
     "static/js/787.efbf917a.chunk.js": "/nissi-computer-fe/static/js/787.efbf917a.chunk.js",
     "static/media/banner1.jpeg": "/nissi-computer-fe/static/media/banner1.f7ceab1943aadeb5a8e4.jpeg",
     "static/media/banner2.jpeg": "/nissi-computer-fe/static/media/banner2.ceab336f5236c5ebf376.jpeg",
@@ -10,11 +10,11 @@
     "static/media/logo.png": "/nissi-computer-fe/static/media/logo.91192916c22f9e48d4e4.png",
     "index.html": "/nissi-computer-fe/index.html",
     "main.df498379.css.map": "/nissi-computer-fe/static/css/main.df498379.css.map",
-    "main.801d7e62.js.map": "/nissi-computer-fe/static/js/main.801d7e62.js.map",
+    "main.67a15855.js.map": "/nissi-computer-fe/static/js/main.67a15855.js.map",
     "787.efbf917a.chunk.js.map": "/nissi-computer-fe/static/js/787.efbf917a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df498379.css",
-    "static/js/main.801d7e62.js"
+    "static/js/main.67a15855.js"
   ]
 }
