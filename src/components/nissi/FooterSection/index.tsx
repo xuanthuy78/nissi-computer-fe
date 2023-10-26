@@ -1,11 +1,11 @@
 import React from "react";
-import { Col, Divider, Flex, Layout, Row, Space, Typography } from "antd";
+import { Col, Divider, Layout, Row, Space, Typography } from "antd";
 import { FacebookFilled } from "@ant-design/icons";
 import { cares } from "../../../features/utils";
 import { CareSection } from "../../common";
 import { CareTypes } from "../../../features/common";
 
-const FooterSection = () => {
+const FooterSection: React.FC = () => {
   return (
     <Layout.Footer className="!text-white">
       <Row gutter={[0, 16]} justify="space-between" align="middle">

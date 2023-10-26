@@ -1,9 +1,6 @@
 import React from "react";
+import Routes from "./routes";
 import "./App.scss";
-import { SearchSection } from "./components/common";
-import SubjectSection from "./components/common/SubjectSection";
-import HeaderSection from "./components/nissi/HeaderSection";
-import { FooterSection } from "./components/nissi";
 
 const App = () => {
   // const product: any = {
@@ -19,7 +16,6 @@ const App = () => {
   //   marketPrice: 15000000,
   //   slug: "man-hinh-10inch-1",
   // };
-
   return (
     <React.Fragment>
       {/* <Row gutter={[12, 12]}>
@@ -27,9 +23,7 @@ const App = () => {
           <CardSection product={product} />
         </Col>
       </Row> */}
-      <HeaderSection />
-      Hello
-      <FooterSection />
+      <Routes />
       {/* <Menu mode="horizontal" items={menus} /> */}
     </React.Fragment>
   );

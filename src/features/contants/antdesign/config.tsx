@@ -7,7 +7,7 @@ export const configTheme: ThemeConfig = {
   },
   components: {
     Layout: {
-      colorBgHeader: themeColor.secondary,
+      headerBg: themeColor.secondary,
       headerColor: themeColor.white,
       footerBg: themeColor.secondary,
     },
