@@ -1,22 +1,33 @@
 import React from "react";
-import { Carousel, Layout, Space, Image } from "antd";
-import { banner, banner1, banner2 } from "../../assets/images";
+import { Layout, Space, Image } from "antd";
+import { banner2 } from "../../assets/images";
+import BannerSection from "../../components/nissi/BannerSection";
+import { banners, productsTest } from "../../features/utils/json";
+import ProductSection from "../../components/nissi/Home/ProductSection";
 
 const HomePage: React.FC = () => {
   return (
     <Layout.Content>
-      <Carousel autoplay>
-        <Space>
-          <Image src={banner} preview={false} height={400} width={"100%"} />
+      <BannerSection datas={banners} />
+
+      <Space className="block container-build">
+        <Space className="block pb-6">
+          <ProductSection products={productsTest} />
         </Space>
-        <Space>
-          <Image src={banner1} preview={false} height={400} width={"100%"} />
+        <Space className="block hover-1">
+          <Image src={banner2} preview={false} className="!max-h-72" />
         </Space>
-        <Space>
-          <Image src={banner2} preview={false} height={400} width={"100%"} />
+
+        <Space className="block space-main">
+          <ProductSection products={productsTest} />
         </Space>
-      </Carousel>
-      hello
+        <Space className="block space-main">
+          <ProductSection products={productsTest} />
+        </Space>
+        <Space className="block space-main">
+          <ProductSection products={productsTest} />
+        </Space>
+      </Space>
     </Layout.Content>
   );
 };

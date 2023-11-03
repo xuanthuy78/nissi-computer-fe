@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.scss";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ConfigProvider } from "antd";
 import { configTheme } from "./features/contants/antdesign/config";
 import { BrowserRouter } from "react-router-dom";
+import { WEB_NAME } from "./features/common";
+import "./index.scss";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -13,7 +14,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ConfigProvider theme={configTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={WEB_NAME}>
         <App />
       </BrowserRouter>
     </ConfigProvider>

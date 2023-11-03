@@ -21,9 +21,6 @@ export default {
       xl: "1200px",
       xxl: "1600px",
     },
-    maxHeight: {
-      500: "500px",
-    },
   },
   plugins: [],
 };

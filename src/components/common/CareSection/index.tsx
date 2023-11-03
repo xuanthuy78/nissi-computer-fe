@@ -1,5 +1,4 @@
 import { Flex, Space, Typography } from "antd";
-import { SyncOutlined } from "@ant-design/icons";
 import React from "react";
 import { CareTypes } from "../../../features/common";
 
