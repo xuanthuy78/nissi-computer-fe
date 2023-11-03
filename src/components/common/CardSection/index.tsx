@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Card, Space, Typography, Image, Button, Tag } from "antd";
+import React from "react";
+import { Card, Space, Typography, Image, Tag } from "antd";
 import { ProductTypes } from "../../../features/common";
 import { discount, formatNumber } from "../../../features/utils";
 import { laptop } from "../../../assets/images";
@@ -13,7 +13,7 @@ const CardSection: React.FC<{ product: ProductTypes }> = ({ product }) => {
       cover={<Image alt={laptop} src={laptop} />}
     >
       {product.marketPrice && product.price && (
-        <Tag className="absolute right-0 top-2 font-bold bg-red-500">
+        <Tag className="absolute right-0 top-2 font-bold bg-red-600">
           -{discount(product.price, product.marketPrice)}%
         </Tag>
       )}
@@ -28,13 +28,13 @@ const CardSection: React.FC<{ product: ProductTypes }> = ({ product }) => {
         {product?.productName}
       </Typography.Title>
 
-      <Space size="middle" style={{ flexGrow: 1 }}>
-        <Typography.Text type="danger" className="font-bold ">
-          {formatNumber(product.price)} <sup>đ</sup>
-        </Typography.Text>
+      <Space direction="vertical" size={0}>
         <Typography.Text type="secondary" delete>
           {formatNumber(product.marketPrice)}
           <sup>đ</sup>
+        </Typography.Text>
+        <Typography.Text type="danger" className="font-bold">
+          {formatNumber(product.price)} <sup>đ</sup>
         </Typography.Text>
       </Space>
     </Card>

@@ -23,3 +23,14 @@ export type CareTypes = {
   describe: string;
   icon: any;
 };
+
+export type CategoryTypes = {
+  id: string;
+  name: string;
+};
+
+export type CategoriesType = {
+  id: string;
+  name: string;
+  categoryItems: CategoryTypes[];
+};
