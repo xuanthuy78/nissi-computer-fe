@@ -39,6 +39,6 @@ export const responsiveProducts: any = {
   },
   xs: {
     breakpoint: { max: 480, min: 0 },
-    items: 1,
+    items: 2,
   },
 };
