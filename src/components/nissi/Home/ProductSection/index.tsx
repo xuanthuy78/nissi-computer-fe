@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Carousel from "react-multi-carousel";
 import { CardSection, SubjectSection } from "../../../common";
 import { ProductTypes, responsiveProducts } from "../../../../features/common";
@@ -8,13 +8,14 @@ import { categories } from "../../../../features/utils/json";
 
 export type PropsType = {
   products: ProductTypes[];
+  colsize: boolean;
 };
 
-const ProductSection: React.FC<PropsType> = ({ products }) => {
+const ProductSection: React.FC<PropsType> = ({ products, colsize }) => {
   return (
     <Space className="block home-products">
       <SubjectSection categories={categories} />
-      <Carousel responsive={responsiveProducts}>
+      <Carousel responsive={responsiveProducts} arrows={colsize ? false : true}>
         {products.map((product: ProductTypes, index) => {
           return <CardSection product={product} key={index} />;
         })}

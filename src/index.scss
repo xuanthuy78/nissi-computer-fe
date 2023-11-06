@@ -12,6 +12,9 @@ body {
   .container-build {
     @apply py-6 px-12;
   }
+  .container-mobile {
+    @apply py-6 px-0;
+  }
   .space-main {
     @apply pt-6;
   }
