@@ -10,7 +10,10 @@ const SubjectSection: React.FC<PropsType> = ({ categories }) => {
   return (
     <React.Fragment>
       <Flex align="center" justify="space-between">
-        <Typography.Text className="font-bold text-xl p-2 bg-primary rounded-t-md ">
+        <Typography.Text
+          className="font-bold text-xl p-2 bg-primary rounded-t-md"
+          ellipsis
+        >
           {categories.name}
         </Typography.Text>
         <Space size="middle" className="cursor-pointer">
@@ -25,7 +28,7 @@ const SubjectSection: React.FC<PropsType> = ({ categories }) => {
             );
           })}
 
-          <Typography.Text className="suptitle-hover">
+          <Typography.Text className="suptitle-hover hidden xs:block">
             xem tất cả
             <DoubleRightOutlined className="text-xs" />
           </Typography.Text>
