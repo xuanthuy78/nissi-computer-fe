@@ -1,3 +1,4 @@
+@import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
@@ -21,9 +22,16 @@ body {
   .suptitle-hover {
     @apply font-bold text-primary hover:text-primary-fa;
   }
-  .home-products {
+
+  .carousel-list {
     @apply relative;
     .react-multi-carousel-list {
+      .react-multiple-carousel__arrow {
+        @apply hidden;
+      }
+      &:hover .react-multiple-carousel__arrow {
+        @apply block;
+      }
       @apply static;
       .react-multiple-carousel__arrow--right {
         @apply left-full;
@@ -31,7 +39,33 @@ body {
       .react-multiple-carousel__arrow--left {
         @apply right-full left-auto;
       }
+      .react-multiple-carousel__arrow {
+        @apply bg-gray-400;
+        &:hover {
+          @apply bg-gray-600;
+        }
+      }
     }
+  }
+
+  .detail-product {
+    .carousel-item {
+      @apply border border-solid border-gray-200 cursor-pointer m-1 flex justify-center;
+    }
+    .ant-card {
+      .ant-card-cover {
+        @apply mt-0 mx-0;
+      }
+    }
+  }
+}
+// ant-design
+.ant-image {
+  width: 100%;
+}
+.ant-descriptions {
+  .ant-descriptions-header {
+    margin-bottom: 0;
   }
 }
 
@@ -80,8 +114,5 @@ body {
       transition: all 0.3s ease-in-out;
       z-index: 1;
     }
-  }
-  .ant-image {
-    width: 100%;
   }
 }

@@ -9,11 +9,18 @@ import {
   LaptopOutlined,
   FileProtectOutlined,
   InsertRowBelowOutlined,
-  RocketOutlined,
-  SyncOutlined,
-  WechatOutlined,
 } from "@ant-design/icons";
 import { createFromIconfontCN } from "@ant-design/icons";
+import { CareTypes } from "../common";
+import {
+  IconGift,
+  IconRocket,
+  IconStar,
+  IconSync,
+  IconWallet,
+  IconWeChat,
+  IconWorld,
+} from "../../components/icons";
 
 export const menus = [
   {
@@ -157,24 +164,47 @@ export const products = [
   },
 ];
 
-export const cares = [
+export const cares: CareTypes[] = [
   {
     id: 1,
     title: "Giao Hàng Toàn Quốc",
     describe: "Nhận hàng và thanh toán tại nhà",
-    icon: <RocketOutlined />,
+    Icon: IconRocket,
   },
   {
     id: 2,
     title: "Đổi trả dễ dàng",
     describe: "Đổi mới trong 7 ngày đầu",
-    icon: <SyncOutlined />,
+    Icon: IconSync,
   },
   {
     id: 3,
     title: "Hỗ trợ tận tình",
     describe: "Tư vấn tổng đài miễn phí 24/7",
-    icon: <WechatOutlined />,
+    Icon: IconWeChat,
+  },
+];
+
+export const utilities: CareTypes[] = [
+  {
+    id: 1,
+    title: "Sản phẩm chính hãng",
+    Icon: IconStar,
+  },
+  {
+    id: 2,
+    title: "Ưu đãi hấp dẫn",
+    Icon: IconGift,
+  },
+  {
+    id: 3,
+    title: "Giao hàng toàn quốc",
+    Icon: IconWorld,
+  },
+  {
+    id: 4,
+    title: "Thanh toán tiện lợi",
+    Icon: IconWallet,
   },
 ];
 export const IconFont = createFromIconfontCN({

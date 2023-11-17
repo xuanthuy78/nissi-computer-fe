@@ -1,3 +1,5 @@
+import { FC } from "react";
+
 export type SearchTypes = {
   id: string;
   img: string;
@@ -8,20 +10,22 @@ export type SearchTypes = {
 export type ProductTypes = {
   id: string;
   productName: string;
+  productImage: string;
+  imageCollection: string[];
+  productSummary: string;
   price: number;
   marketPrice: number;
-  productSummary: string;
-  productImage: string;
-  specialOffer: { title: string };
-  productType: { isNew: number; isHot: number; isSaleOff: number };
-  brand?: { image: string };
+  brand?: { name: string };
+  gift?: string;
+  guarantee?: string;
+  slug: string;
 };
 
 export type CareTypes = {
   id: number;
   title: string;
-  describe: string;
-  icon: any;
+  describe?: string;
+  Icon: FC;
 };
 
 export type CategoryTypes = {
@@ -33,4 +37,8 @@ export type CategoriesType = {
   id: string;
   name: string;
   categoryItems: CategoryTypes[];
+};
+
+export type IconPropsType = {
+  size?: number;
 };

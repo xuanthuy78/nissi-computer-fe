@@ -12,7 +12,7 @@ const FooterSection: React.FC = () => {
         {cares.map((item: CareTypes) => {
           return (
             <Col span={24} md={6} key={item.id}>
-              <CareSection data={item} />
+              <CareSection data={item} Icon={item.Icon} />
             </Col>
           );
         })}
