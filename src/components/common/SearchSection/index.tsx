@@ -26,7 +26,7 @@ const SearchSection: React.FC<PropsType> = ({ onFinish }) => {
             <AutoComplete />
           </Form.Item>
           <Form.Item className="mb-0">
-            <Button htmlType="submit" type="primary" className="btn-primary">
+            <Button htmlType="submit" type="primary" className="bg-primary">
               <Typography.Text className="!hidden md:!block font-bold">
                 Tìm kiếm
               </Typography.Text>

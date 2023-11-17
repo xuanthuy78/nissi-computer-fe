@@ -1,22 +1,35 @@
-import { Flex, Space, Typography } from "antd";
 import React from "react";
-import { CareTypes } from "../../../features/common";
+import { Flex, Space, Typography } from "antd";
+import { CareTypes, IconPropsType } from "../../../features/common";
 
 export type PropsType = {
   data: CareTypes;
+  Icon: React.FC<IconPropsType>;
+  colorText?: boolean;
 };
 
-const CareSection: React.FC<PropsType> = ({ data }) => {
+const CareSection: React.FC<PropsType> = ({
+  data,
+  Icon,
+  colorText = false,
+}) => {
   return (
     <Flex align="center">
-      <Space size={0} className="text-red-500 text-4xl">
-        {data.icon}
-      </Space>
+      {Icon && (
+        <Space size={0} className="text-4xl">
+          <Icon />
+        </Space>
+      )}
+
       <Space size={0} direction="vertical" className="ml-3">
-        <Typography.Text className="font-bold uppercase">
-          {data.title}
-        </Typography.Text>
-        <Typography.Text>{data.describe}</Typography.Text>
+        {data?.title && (
+          <Typography.Text
+            className={`font-bold uppercase ${colorText ? "text-black" : ""}`}
+          >
+            {data.title}
+          </Typography.Text>
+        )}
+        {data?.describe && <Typography.Text>{data.describe}</Typography.Text>}
       </Space>
     </Flex>
   );

@@ -10,6 +10,7 @@ export const themeColor = {
   appleGreen: "#7CB518",
   fireBrick: "#C1121F",
   white: "#fff",
+  brightRed: "#dc2626",
 };
 
 export const responsiveProducts: any = {

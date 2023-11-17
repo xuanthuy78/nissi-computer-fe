@@ -4,10 +4,10 @@ import { banner2 } from "../../assets/images";
 import BannerSection from "../../components/nissi/BannerSection";
 import { banners, productsTest } from "../../features/utils/json";
 import ProductSection from "../../components/nissi/Home/ProductSection";
-import { useMediaQuery } from "react-responsive";
+import { useMobile } from "../../features/common/hooks";
 
 const HomePage: React.FC = () => {
-  const isMobile = useMediaQuery({ query: "(max-width: 767px)" });
+  const isMobile = useMobile();
   return (
     <Layout.Content>
       <BannerSection datas={banners} />

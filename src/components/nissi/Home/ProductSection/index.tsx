@@ -13,7 +13,7 @@ export type PropsType = {
 
 const ProductSection: React.FC<PropsType> = ({ products, colsize }) => {
   return (
-    <Space className="block home-products">
+    <Space className="block carousel-list">
       <SubjectSection categories={categories} />
       <Carousel responsive={responsiveProducts} arrows={colsize ? false : true}>
         {products.map((product: ProductTypes, index) => {
