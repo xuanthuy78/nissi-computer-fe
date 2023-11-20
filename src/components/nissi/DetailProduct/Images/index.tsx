@@ -1,6 +1,5 @@
 import React from "react";
 import { Image } from "antd";
-import { useMediaQuery } from "react-responsive";
 import { laptop } from "../../../../assets/images";
 import { ProductTypes, responsiveProducts } from "../../../../features/common";
 import { productsTest } from "../../../../features/utils/json";
