@@ -17,6 +17,7 @@ import { SearchSection } from "../../common";
 import { iconBuild, logo } from "../../../assets/images";
 import { ShopFilled, MenuOutlined } from "@ant-design/icons";
 import { menus, products } from "../../../features/utils";
+import { Link } from "react-router-dom";
 
 const HeaderSection = () => {
   const [open, setOpen] = useState(false);
@@ -24,7 +25,9 @@ const HeaderSection = () => {
     <Layout.Header className="leading-none h-auto relative">
       <Row align="middle" justify="space-between" className="py-4">
         <Col lg={5} xl={4} xxl={3}>
-          <Image src={logo} preview={false} width={160} height={90} />
+          <Link to="/">
+            <Image src={logo} preview={false} width={160} height={90} />
+          </Link>
         </Col>
         <Col lg={19} xl={20} xxl={21}>
           <Row justify="space-between" align="middle">

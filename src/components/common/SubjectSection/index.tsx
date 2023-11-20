@@ -4,9 +4,10 @@ import { DoubleRightOutlined } from "@ant-design/icons";
 import { CategoriesType, CategoryTypes } from "../../../features/common";
 
 export type PropsType = {
-  categories: CategoriesType;
+  category: CategoriesType;
+  isShow?: boolean;
 };
-const SubjectSection: React.FC<PropsType> = ({ categories }) => {
+const SubjectSection: React.FC<PropsType> = ({ category, isShow = false }) => {
   return (
     <React.Fragment>
       <Flex align="center" justify="space-between">
@@ -14,25 +15,27 @@ const SubjectSection: React.FC<PropsType> = ({ categories }) => {
           className="font-bold text-xl p-2 bg-primary rounded-t-md"
           ellipsis
         >
-          {categories.name}
+          {category.name}
         </Typography.Text>
-        <Space size="middle" className="cursor-pointer">
-          {categories?.categoryItems.map((item: CategoryTypes) => {
-            return (
-              <Typography.Text
-                className="suptitle-hover hidden lg:block"
-                key={item.id}
-              >
-                {item.name}
-              </Typography.Text>
-            );
-          })}
+        {!isShow && (
+          <Space size="middle" className="cursor-pointer">
+            {category?.categoryItems.map((item: CategoryTypes) => {
+              return (
+                <Typography.Text
+                  className="suptitle-hover hidden lg:block"
+                  key={item.id}
+                >
+                  {item.name}
+                </Typography.Text>
+              );
+            })}
 
-          <Typography.Text className="suptitle-hover hidden xs:block">
-            xem tất cả
-            <DoubleRightOutlined className="text-xs" />
-          </Typography.Text>
-        </Space>
+            <Typography.Text className="suptitle-hover hidden xs:block">
+              xem tất cả
+              <DoubleRightOutlined className="text-xs" />
+            </Typography.Text>
+          </Space>
+        )}
       </Flex>
       <Divider className="m-0 !border-primary" />
     </React.Fragment>

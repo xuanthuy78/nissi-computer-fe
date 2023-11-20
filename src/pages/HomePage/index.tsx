@@ -1,5 +1,5 @@
 import React from "react";
-import { Layout, Space, Image } from "antd";
+import { Space, Image } from "antd";
 import { banner2 } from "../../assets/images";
 import BannerSection from "../../components/nissi/BannerSection";
 import { banners, productsTest } from "../../features/utils/json";
@@ -9,7 +9,7 @@ import { useMobile } from "../../features/common/hooks";
 const HomePage: React.FC = () => {
   const isMobile = useMobile();
   return (
-    <Layout.Content>
+    <React.Fragment>
       <BannerSection datas={banners} />
 
       <Space className="block container-mobile md:container-build">
@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
           <ProductSection products={productsTest} colsize={isMobile} />
         </Space>
       </Space>
-    </Layout.Content>
+    </React.Fragment>
   );
 };
 

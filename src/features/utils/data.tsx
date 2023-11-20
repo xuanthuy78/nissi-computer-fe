@@ -21,6 +21,7 @@ import {
   IconWeChat,
   IconWorld,
 } from "../../components/icons";
+import { Link } from "react-router-dom";
 
 export const menus = [
   {
@@ -69,97 +70,53 @@ export const products = [
   {
     key: "1",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link to="products/hdfs">
         <DesktopOutlined /> Máy tính để bàn
-      </a>
+      </Link>
     ),
   },
   {
     key: "2",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link to="products/hdfs">
         <DatabaseOutlined /> PC Gaming
-      </a>
+      </Link>
     ),
   },
   {
     key: "3",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link to="products/hdfs">
         <LaptopOutlined /> Máy tính xách tay
-      </a>
+      </Link>
     ),
   },
   {
     key: "4",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link to="products/hdfs">
         <InsertRowBelowOutlined /> Linh kiện máy tính
-      </a>
+      </Link>
     ),
   },
   {
     key: "5",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Phụ kiện máy tính
-      </a>
-    ),
+    label: <Link to="products/hdfs">Phụ kiện máy tính</Link>,
   },
   {
     key: "6",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Thiết bị mạng
-      </a>
-    ),
+    label: <Link to="products/hdfs">Thiết bị mạng</Link>,
   },
   {
     key: "7",
-    label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
-        Camera giám sát
-      </a>
-    ),
+    label: <Link to="products/hdfs">Camera giám sát</Link>,
   },
   {
     key: "8",
     label: (
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://www.antgroup.com"
-      >
+      <Link to="products/hdfs">
         <FileProtectOutlined /> Phần mềm bản quyền
-      </a>
+      </Link>
     ),
   },
 ];
@@ -208,5 +165,5 @@ export const utilities: CareTypes[] = [
   },
 ];
 export const IconFont = createFromIconfontCN({
-  scriptUrl: "//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
+  scriptUrl: "//Linkt.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
 });

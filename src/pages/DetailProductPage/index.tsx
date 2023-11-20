@@ -66,7 +66,7 @@ const DetailProductPage: React.FC = () => {
   ];
 
   return (
-    <Layout.Content className="container-mobile md:container-build detail-product">
+    <div className="container-mobile md:container-build detail-product">
       <Breadcrumb
         items={[
           {
@@ -117,7 +117,7 @@ const DetailProductPage: React.FC = () => {
       <Card>
         <Tabs defaultActiveKey="1" items={items} />
       </Card>
-    </Layout.Content>
+    </div>
   );
 };
 
