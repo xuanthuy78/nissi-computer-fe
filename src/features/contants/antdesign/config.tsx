@@ -5,6 +5,7 @@ export const configTheme: ThemeConfig = {
   token: {
     colorPrimary: themeColor.primary,
     colorError: themeColor.brightRed,
+    colorWarning: themeColor.primary,
   },
   components: {
     Layout: {

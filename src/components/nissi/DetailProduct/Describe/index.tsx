@@ -1,6 +1,8 @@
 import { Badge, Button, Card, Divider, Flex, Space, Typography } from "antd";
 import React from "react";
 import { ProductTypes } from "../../../../features/common";
+import { Link } from "react-router-dom";
+import { ButtonSubmit } from "../../../common";
 
 export type PropsType = {
   product: ProductTypes;
@@ -58,13 +60,9 @@ const Describe: React.FC<PropsType> = ({ product }) => {
           <Badge status="warning" count="Mua Online giá cực rẻ" />
         </Flex>
       </Space>
-      <Button
-        type="primary"
-        className="w-full h-14 font-bold text-2xl py-3 uppercase mb-6"
-        danger
-      >
-        Đặt mua ngay
-      </Button>
+      <Link to="/cart">
+        <ButtonSubmit title="Đặt hàng" />
+      </Link>
     </React.Fragment>
   );
 };

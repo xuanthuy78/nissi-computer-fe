@@ -19,6 +19,12 @@ body {
   .space-main {
     @apply pt-6;
   }
+  .space {
+    @apply py-6;
+  }
+  .text-basic {
+    @apply text-black;
+  }
   .suptitle-hover {
     @apply font-bold text-primary hover:text-primary-fa;
   }

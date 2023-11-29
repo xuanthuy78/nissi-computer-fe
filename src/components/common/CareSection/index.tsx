@@ -24,7 +24,7 @@ const CareSection: React.FC<PropsType> = ({
       <Space size={0} direction="vertical" className="ml-3">
         {data?.title && (
           <Typography.Text
-            className={`font-bold uppercase ${colorText ? "text-black" : ""}`}
+            className={`font-bold uppercase ${colorText ? "text-basic" : ""}`}
           >
             {data.title}
           </Typography.Text>

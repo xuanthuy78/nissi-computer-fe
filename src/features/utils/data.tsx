@@ -10,7 +10,6 @@ import {
   FileProtectOutlined,
   InsertRowBelowOutlined,
 } from "@ant-design/icons";
-import { createFromIconfontCN } from "@ant-design/icons";
 import { CareTypes } from "../common";
 import {
   IconGift,
@@ -164,6 +163,3 @@ export const utilities: CareTypes[] = [
     Icon: IconWallet,
   },
 ];
-export const IconFont = createFromIconfontCN({
-  scriptUrl: "//Linkt.alicdn.com/t/font_8d5l8fzk5b87iudi.js",
-});
