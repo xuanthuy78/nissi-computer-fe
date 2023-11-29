@@ -13,12 +13,14 @@ import {
   Row,
   Col,
   Breadcrumb,
+  Button,
 } from "antd";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { IconDelete } from "../../components/icons";
+import { IconCart, IconDelete } from "../../components/icons";
 import { formatNumber } from "../../features/utils";
 import { ButtonSubmit } from "../../components/common";
+import "./style.scss";
 
 const ListMeta: React.FC<any> = ({ value }) => {
   return (
@@ -325,6 +327,21 @@ const ShoppingPage: React.FC = () => {
               <ButtonSubmit title="Đặt hàng" />
             </Form.Item>
           </Form>
+        </Card>
+        <Card className="space">
+          <Flex justify="center">
+            <Space className="no-cart" direction="vertical" size="large">
+              <IconCart />
+              <Typography.Text className="text-basic">
+                Không có sản phẩm nào trong giỏ hàng của bạn
+              </Typography.Text>
+              <Link to="/">
+                <Button type="primary" className="bg-primary font-bold">
+                  MUA HÀNG NGAY
+                </Button>
+              </Link>
+            </Space>
+          </Flex>
         </Card>
       </Col>
     </Row>

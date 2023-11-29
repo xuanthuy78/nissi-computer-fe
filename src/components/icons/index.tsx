@@ -8,6 +8,7 @@ import { IconWallet } from "./IconWallet";
 import { IconAddLine } from "./IconAddLine";
 import { IconDelete } from "./IconDelete";
 import { IconMinus } from "./IconMinus";
+import { IconCart } from "./IconCart";
 
 export {
   IconWorld,
@@ -20,4 +21,5 @@ export {
   IconAddLine,
   IconMinus,
   IconDelete,
+  IconCart,
 };
