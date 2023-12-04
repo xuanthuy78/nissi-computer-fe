@@ -1,7 +1,5 @@
 import {
   HomeOutlined,
-  InfoCircleOutlined,
-  FireOutlined,
   DeploymentUnitOutlined,
   ContactsOutlined,
   DesktopOutlined,
@@ -24,19 +22,9 @@ import { Link } from "react-router-dom";
 
 export const menus = [
   {
-    label: "Trang chủ",
+    label: <Link to="/">Trang chủ</Link>,
     key: "home",
     icon: <HomeOutlined />,
-  },
-  {
-    label: "Giới thiệu",
-    key: "introduction",
-    icon: <InfoCircleOutlined />,
-  },
-  {
-    label: "Ưu đãi trong ngày",
-    key: "sale",
-    icon: <FireOutlined />,
   },
   {
     label: "Dịch vụ",
@@ -44,22 +32,22 @@ export const menus = [
     icon: <DeploymentUnitOutlined />,
     children: [
       {
-        label: "Sửa máy tính tận nơi",
-        key: "2",
+        label: <Link to="/stay-computer">Sửa máy tính tận nơi Đà Nẵng</Link>,
+        key: "stay",
       },
       {
-        label: "Sửa máy tính tận nơi",
-        key: "1",
+        label: <Link to="/repair-online">Sửa máy tính Online Miễn Phí</Link>,
+        key: "repair",
       },
       {
-        label: "Sửa máy tính tận nơi",
-        key: "4",
+        label: <Link to="/buildpc">Xây dựng cấu hình</Link>,
+        key: "buildpc",
       },
     ],
     theme: "light",
   },
   {
-    label: "Liên hệ",
+    label: <Link to="/contact">Liên hệ</Link>,
     key: "contact",
     icon: <ContactsOutlined />,
   },

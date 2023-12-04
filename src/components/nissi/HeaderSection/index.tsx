@@ -36,34 +36,46 @@ const HeaderSection = () => {
             </Col>
             <Col lg={8} xl={7} xxl={5}>
               <Flex justify="end" align="middle" gap="large">
-                <Space className="hidden sm:block">
-                  <Flex align="center">
-                    <Image
-                      src={iconBuild}
-                      preview={false}
-                      height={30}
-                      width={30}
-                      className="animate-bounce"
-                    />
-                    <Space size={0} direction="vertical" className="ml-3">
-                      <Typography.Text>Build PC Gaming</Typography.Text>
-                      <Typography.Text className="font-bold">
-                        Xây dựng cấu hình
-                      </Typography.Text>
-                    </Space>
-                  </Flex>
-                </Space>
+                <Link to="/buildpc">
+                  <Space className="hidden sm:block cursor-pointer">
+                    <Flex align="center">
+                      <Image
+                        src={iconBuild}
+                        preview={false}
+                        height={30}
+                        width={30}
+                        className="animate-bounce"
+                      />
+                      <Space size={0} direction="vertical" className="ml-3">
+                        <Typography.Text>Build PC Gaming</Typography.Text>
+                        <Typography.Text className="font-bold hover:!text-primary">
+                          Xây dựng cấu hình
+                        </Typography.Text>
+                      </Space>
+                    </Flex>
+                  </Space>
+                </Link>
+
                 <Space>
-                  <Badge size="default" count={5} className="end">
-                    <ShopFilled className="text-3xl text-white" />
-                  </Badge>
+                  <Link to="/cart">
+                    <Badge
+                      size="default"
+                      count={5}
+                      className="end cursor-pointer"
+                    >
+                      <ShopFilled className="text-3xl text-white" />
+                    </Badge>
+                  </Link>
                 </Space>
               </Flex>
             </Col>
           </Row>
         </Col>
       </Row>
-      <Divider className="absolute right-0 top-24 border-gray-600 hidden lg:block" />
+      <Divider
+        className="absolute right-0 border-gray-600 hidden lg:block"
+        style={{ top: "99px" }}
+      />
       <Space className="hidden lg:block">
         <Row align="middle" justify="space-between" className="leading-10">
           <Col lg={5} xl={4} xxl={3}>
@@ -71,6 +83,7 @@ const HeaderSection = () => {
               menu={{
                 items: products,
               }}
+              className="bg-primary w-full px-3 hover:opacity-75"
             >
               <Space className="cursor-pointer font-bold">
                 <MenuOutlined />
@@ -79,7 +92,12 @@ const HeaderSection = () => {
             </Dropdown>
           </Col>
           <Col lg={19} xl={20} xxl={21}>
-            <Menu mode="horizontal" theme="dark" items={menus} />
+            <Menu
+              mode="horizontal"
+              theme="dark"
+              items={menus}
+              selectable={false}
+            />
           </Col>
         </Row>
       </Space>

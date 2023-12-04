@@ -1,5 +1,12 @@
 export const WEB_NAME = "nissi-computer-fe";
 
+export const CONTACT = {
+  facebook: "https://www.facebook.com/VoMinhQuy.0934872371",
+  zalo: "",
+  tiktok: "",
+  maps: "https://maps.google.com/maps?q=100%20bui%20duong%20lich&t=&z=13&ie=UTF8&iwloc=&output=embed",
+};
+
 export const themeColor = {
   primary: "#fb8500",
   primaryFa: "#ffa229",
