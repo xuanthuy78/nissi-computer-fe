@@ -42,7 +42,7 @@ const SearchSection: React.FC<PropsType> = ({ onFinish }) => {
           src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${1}`}
         />
         <Space direction="vertical">
-          <Typography.Text className="font-bold !text-blue-green">
+          <Typography.Text className="font-bold !text-secondary">
             Ổ cứng HDD Western Digital Blue 1TB 3.5 Inch SATA 3
           </Typography.Text>
           <Typography.Text type="danger">50.000</Typography.Text>

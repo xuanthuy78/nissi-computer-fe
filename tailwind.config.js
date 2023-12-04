@@ -9,7 +9,7 @@ export default {
         "primary-fa": themeColor.primaryFa,
         secondary: themeColor.secondary,
         "blue-green": themeColor.blueGreen,
-        "blue-sky": themeColor.skyBlue,
+        "blue-sky": themeColor.blueSky,
         "selective-yellow": themeColor.selectiveYellow,
       },
     },

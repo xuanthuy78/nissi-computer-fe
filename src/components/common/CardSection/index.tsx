@@ -24,7 +24,7 @@ const CardSection: React.FC<{ product: ProductTypes }> = ({ product }) => {
             rows: 3,
           }}
           level={5}
-          className="!font-bold m-0 !text-blue-green"
+          className="!font-bold m-0 !text-secondary"
           style={{ flexGrow: 1 }}
         >
           {product?.productName}

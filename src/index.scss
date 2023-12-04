@@ -22,13 +22,20 @@ body {
   .space {
     @apply my-6;
   }
+  .space-main-pb {
+    @apply pb-6;
+  }
   .text-basic {
     @apply text-black;
   }
   .suptitle-hover {
     @apply font-bold text-primary hover:text-primary-fa;
   }
-
+  .space-item-hover {
+    .ant-space-item {
+      @apply hover:scale-110;
+    }
+  }
   .carousel-list {
     @apply relative;
     .react-multi-carousel-list {

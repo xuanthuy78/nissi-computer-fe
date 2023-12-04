@@ -9,6 +9,11 @@ import { IconAddLine } from "./IconAddLine";
 import { IconDelete } from "./IconDelete";
 import { IconMinus } from "./IconMinus";
 import { IconCart } from "./IconCart";
+import { IconFacebook } from "./IconFacebook";
+import { IconTiktok } from "./IconTiktok";
+import { IconZalo } from "./IconZalo";
+import { IconPlane } from "./IconPlane";
+import { IconSuitcase } from "./IconSuitcase";
 
 export {
   IconWorld,
@@ -22,4 +27,9 @@ export {
   IconMinus,
   IconDelete,
   IconCart,
+  IconFacebook,
+  IconTiktok,
+  IconZalo,
+  IconPlane,
+  IconSuitcase,
 };
